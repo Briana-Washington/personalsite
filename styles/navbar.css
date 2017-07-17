@@ -1,0 +1,85 @@
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 2%;
+    font-size: 130%;
+}
+
+.navbar a:hover {
+    color: #ebc7eb;
+    background-color: black;
+    text-decoration: none;
+}
+
+.navbar a:active {
+    color: #ebc7eb;
+}
+
+.navbar {
+    text-align: center;
+    padding: 2%;
+    top: 0;
+    background-color: #b3ffda;
+    margin: 0%;
+    position: fixed;
+    z-index: 1;
+    width: 94.5%;
+    border: 10px solid #ebc7eb;
+    font-family: 'Handlee', cursive;
+}
+
+
+/* 
+4) Style nav items -- inline, no bullet points, space between
+*/
+
+.nav-item {
+    display: inline;
+    list-style-type: none;
+}
+
+
+/* 
+5) Hide the button for desktop
+*/
+
+.nav-toggle {
+    display: none;
+}
+
+
+/* 
+6) Add media query for mobile styles
+*/
+
+@media (max-width:450px) {
+    /* 
+7) Add mobile style for nav list -- items in a column
+*/
+    .nav-item {
+        display: block;
+    }
+    /* 
+8) Display the button on mobile
+*/
+    .nav-toggle {
+        display: inline;
+    }
+    /* 
+9) Add a class that hides the nav items on mobile. This is an additional class because we are going to use it to sometimes show the nav and sometimes hide it
+*/
+    .mobile-nav-hidden {
+        display: none;
+    }
+}
+
+.nav-toggle {
+    background-color: #ebc7eb;
+    color: white;
+    border: solid;
+    width: 20%;
+    border-radius: 20%;
+}
+
+
+}
