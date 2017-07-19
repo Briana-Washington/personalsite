@@ -22,3 +22,6 @@ Dotted background was made by Lea Verou.
     - http://lea.verou.me/
     I found it here:
     - http://lea.verou.me/css3patterns/# personalsite
+    
+Northwestern cover story by ELYSESAMUELS. 
+    - Article: http://news.medill.northwestern.edu/chicago/chicago-teens-find-confidants-and-confidence-by-putting-pen-to-paper/
