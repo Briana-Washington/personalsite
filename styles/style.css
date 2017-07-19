@@ -114,3 +114,11 @@ iframe {
   margin-left: auto;
   margin-right: auto;
 }
+
+.container {
+  background-color: rgba(15, 15, 10, 0.9);
+  margin: 10px auto auto auto;
+  max-width: 600px;
+  text-align: center;
+  padding:10%;
+}
