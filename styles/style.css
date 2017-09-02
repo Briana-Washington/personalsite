@@ -122,3 +122,7 @@ iframe {
   text-align: center;
   padding:10%;
 }
+.formFooter {
+    display:none !important;
+    width: 0%
+}

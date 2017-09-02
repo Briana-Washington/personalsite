@@ -200,5 +200,5 @@ hr + .form-address-table td[width="50%"] + td[width="50%"] >span:first-child {
 
 .formFooter {
     display:none !important;
-    
+    width: 0%
 }
