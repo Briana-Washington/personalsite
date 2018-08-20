@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Cookie|Crimson+Text');
-
 .navbar a {
-    color: grey;
+    color: #ffff99;
     text-decoration: none;
     padding: 2%;
-    font-size: 130%;
-    color: #ffff99;
+    font-size: 1.2em;
+    width: 100%;
 }
 
 .navbar a:hover {
@@ -19,16 +17,23 @@
 
 .navbar {
     text-align: center;
-    padding: 2%;
+    padding: 1.5%;
     top: 0;
     background-color: #2C363F;
     margin: 0%;
     position: fixed;
-    z-index: 2;
-    border-bottom: 7px solid #ffff99;
-    font-family: 'Crimson Text', serif;
     width: 100%;
+    font-family: 'Crimson Text', serif;
+    display: inline;
+    align-items: center;
 }
+
+nav,
+.navbar,
+.nav-toggle {
+    z-index: 2;
+}
+
 
 /* 
 4) Style nav items -- inline, no bullet points, space between
@@ -37,6 +42,7 @@
 .nav-item {
     display: inline;
     list-style-type: none;
+    width: 100%;
 }
 
 
@@ -53,7 +59,7 @@
 6) Add media query for mobile styles
 */
 
-@media (max-width:450px) {
+@media (max-width:490px) {
     /* 
 7) Add mobile style for nav list -- items in a column
 */
@@ -64,7 +70,13 @@
 8) Display the button on mobile
 */
     .nav-toggle {
-        display: inline;
+        display: block;
+        position: absolute;
+        color: #ffff99;
+        background-color: #2C363F;
+        width: 100%;
+        height: 5em;
+        border: none;
     }
     /* 
 9) Add a class that hides the nav items on mobile. This is an additional class because we are going to use it to sometimes show the nav and sometimes hide it
@@ -72,17 +84,4 @@
     .mobile-nav-hidden {
         display: none;
     }
-}
-
-.nav-toggle {
-    background-color: #2C363F;
-    color: #ffff99;
-    width: 20%;
-    height: 3em;
-    border: none;
-    font-size: 1.2em;
-    width:100%;
-    position: fixed;
-}
-
 }

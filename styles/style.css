@@ -13,6 +13,26 @@ body {
   z-index: 1;
 }
 
+.overlay {
+ background-color:rgba(0, 0, 0, 0.29); 
+ height: inherit;
+ padding: 2em;
+}
+
+#overlaybottom {
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.overlay h1 {
+  margin:0;
+}
+
+.overlay p {
+  color:white;
+}
+
 h1,
 h2 {
   font-family: 'Cookie', cursive;
@@ -124,11 +144,10 @@ a:hover {
 }
 
 #socialmedia {
-  width: 100%;
+  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 3.5%;
 }
 
 footer {
@@ -139,18 +158,23 @@ footer {
   justify-content: space-around;
   width: 100%;
   bottom: 0;
-  height: 15em;
+  height: 10em;
   position: relative;
 }
 
+footer h2 {
+  margin:0;
+}
+
 #caption {
-  font-size: 1.15em;
   margin-top: 1%;
   margin-bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 
-@media (max-width:800px) {
+@media (min-width:200px) {
   
   body {
     line-height:1.7;
@@ -169,15 +193,22 @@ footer {
     text-indent:0;
   }
   
-  #caption {
-    font-size: 1em;
-  }
-  
   #tools {
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
   justify-content:space-around;
   align-items:center;
+}
+
+#socialmedia {
+  width:100%;
+}
+#coderspace {
+  width: 8em;
+}
+
+#overlaybottom {
+  margin-top:5%;
 }
 }
