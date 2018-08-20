@@ -1,24 +1,183 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie|Crimson+Text');
 
-.construction {
-  margin:auto;
-  display:flex;
-  justify-content:center;
-  align-self:center;
+body {
+  background-color: #F7A4B9;
+  line-height: 1.8;
+  padding: 0;
+  margin: 0;
 }
 
+.text {
+  background-color: white;
+  padding: 5%;
+  z-index: 1;
+}
+
+h1,
+h2 {
+  font-family: 'Cookie', cursive;
+  color: #F7A4B9;
+}
 
 h1 {
-  text-align:justify;
-  margin:auto;
-  width:50%;
-  font-family: 'Cookie', cursive;
-  font-size:3em;
+  font-size: 3em;
 }
 
-.fa-cogs {
-  color:#F7A4B9;
-  text-align:center;
-  width:100%;
-  margin:5%;
+h2 {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.30em;
+  text-indent: 3em;
+  color: #2C363F;
+}
+
+.imagebg {
+  height: 100vh;
+}
+
+#me {
+  background: url("../images/briana.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+#baby {
+  background: url("../images/baby.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+#coderspace_me {
+  background: url("../images/coderspace.JPG") no-repeat fixed center;
+  background-size: cover;
+}
+
+.parent {
+  padding: 5%;
+}
+
+#tools {
+  padding: 5%;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  align-items:center;
+}
+
+#tools img {
+  margin: 5%;
+  padding: 2%;
+}
+
+#tools h1 {
+  color: #2C363F;
+}
+
+#cloud9 {
+  width: 7.5em;
+}
+
+#trello {
+  width: 13em;
+}
+
+#slack {
+  width: 5em;
+}
+
+#codepen {
+  width: 4.8em;
+}
+
+#coolors,
+#github {
+  width: 5em;
+}
+
+#coderspace {
+  width: 14em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  margin-top: 3%;
+}
+
+.fab {
+  color: #F7A4B9;
+}
+
+.fab:hover {
+  color: #ffff80;
+}
+
+a:link {
+  color: #ffff80;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F7A4B9;
+}
+
+#socialmedia {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3.5%;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  bottom: 0;
+  height: 15em;
+  position: relative;
+}
+
+#caption {
+  font-size: 1.15em;
+  margin-top: 1%;
+  margin-bottom: 0;
+}
+
+
+@media (max-width:800px) {
+  
+  body {
+    line-height:1.7;
+  }
+  
+  h1 {
+    font-size:2.7em;
+  }
+  
+  h2 {
+    font-size:1.8em;
+  }
+  
+  p{
+    font-size:1.10em;
+    text-indent:0;
+  }
+  
+  #caption {
+    font-size: 1em;
+  }
+  
+  #tools {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  align-items:center;
+}
 }

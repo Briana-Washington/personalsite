@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie|Crimson+Text');
+
 .navbar a {
     color: grey;
     text-decoration: none;
     padding: 2%;
     font-size: 130%;
+    color: #ffff99;
 }
 
 .navbar a:hover {
-    color: #ebc7eb;
-    background-color: black;
+    color: #F7A4B9;
     text-decoration: none;
 }
 
@@ -19,15 +21,14 @@
     text-align: center;
     padding: 2%;
     top: 0;
-    background-color: #b3ffda;
+    background-color: #2C363F;
     margin: 0%;
     position: fixed;
-    z-index: 1;
-    width: 94.5%;
-    border: 10px solid #ebc7eb;
-    font-family: 'Handlee', cursive;
+    z-index: 2;
+    border-bottom: 7px solid #ffff99;
+    font-family: 'Crimson Text', serif;
+    width: 100%;
 }
-
 
 /* 
 4) Style nav items -- inline, no bullet points, space between
@@ -74,12 +75,14 @@
 }
 
 .nav-toggle {
-    background-color: #ebc7eb;
-    color: white;
-    border: solid;
+    background-color: #2C363F;
+    color: #ffff99;
     width: 20%;
-    border-radius: 20%;
+    height: 3em;
+    border: none;
+    font-size: 1.2em;
+    width:100%;
+    position: fixed;
 }
-
 
 }
