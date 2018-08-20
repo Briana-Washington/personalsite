@@ -1,128 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Bellefair|Handlee|Homemade+Apple');
-body {
-  background-color: black;
-  margin: 0%;
-  width: 100%;
-  background-image: radial-gradient(#ebc7eb 15%, transparent 16%), radial-gradient(white 15%, transparent 16%);
-  background-size: 60px 60px;
-  background-position: 0 0, 30px 30px;
+@import url('https://fonts.googleapis.com/css?family=Cookie|Crimson+Text');
+
+.construction {
+  margin:auto;
+  display:flex;
+  justify-content:center;
+  align-self:center;
 }
 
-p {
-  color: white;
-  line-height: 2;
-  text-indent: 5%;
-  padding: 3%;
-  font-size: 130%;
-  font-family: 'Bellefair', serif;
-}
 
 h1 {
-  color: #ebc7eb;
-  text-align: center;
-  font-family: 'Handlee', cursive;
-  font-size: 210%;
+  text-align:justify;
+  margin:auto;
+  width:50%;
+  font-family: 'Cookie', cursive;
+  font-size:3em;
 }
 
-h2 {
-  font-family: 'Handlee', cursive;
-  font-size: 160%;
-  text-align: center;
-  color: #b3ffda;
-}
-
-#book {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
-}
-
-main {
-  padding: 10% 5% 8% 5%;
-  background-color: rgba(15, 15, 10, 0.8)
-}
-
-footer {
-  bottom: 0;
-  border-top: 10px solid #b3ffda;
-  text-align: center;
-  width: 100%;
-  background-color: rgba(15, 15, 10, 0.8)
-}
-
-a {
-  text-decoration: none;
-  color: #b3ffda;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: #ebc7eb;
-}
-
-.fa {
-  margin: 1%;
-}
-
-.fa:hover {
-  color: #ebc7eb;
-}
-
-#id {
-  width: 20%;
-  border-radius: 20%;
-  border: 10px solid white;
-}
-
-#tr {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  border: 10px solid white;
-}
-
-.credit {
-  font-size: 110%;
-  padding: 0%;
-  padding-right: 5%;
-}
-
-.image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.videos {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-iframe {
-  padding: 2%;
-}
-
-.book {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.container {
-  background-color: rgba(15, 15, 10, 0.9);
-  margin: 10px auto auto auto;
-  max-width: 600px;
-  text-align: center;
-  padding:10%;
-}
-.formFooter {
-    display:none !important;
-    width: 0%
+.fa-cogs {
+  color:#F7A4B9;
+  text-align:center;
+  width:100%;
+  margin:5%;
 }
