@@ -211,5 +211,13 @@ footer h2 {
 
 #overlaybottom {
   margin-top:5%;
+  height:12em;
+}
+
+#overlaybottom h1 {
+  font-size:1.8em;
+}
+#overlaybottom p {
+  font-size:1em;
 }
 }
