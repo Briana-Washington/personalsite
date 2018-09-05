@@ -1,87 +1,54 @@
-.navbar a {
-    color: #ffff99;
-    text-decoration: none;
-    padding: 2%;
-    font-size: 1.2em;
-    width: 100%;
+nav {
+    z-index:2;
 }
 
-.navbar a:hover {
-    color: #F7A4B9;
-    text-decoration: none;
-}
-
-.navbar a:active {
-    color: #ebc7eb;
-}
-
-.navbar {
-    text-align: center;
-    padding: 1.5%;
-    top: 0;
+.topnav {
     background-color: #2C363F;
-    margin: 0%;
-    position: fixed;
-    width: 100%;
-    font-family: 'Crimson Text', serif;
-    display: inline;
-    align-items: center;
+    overflow: hidden;
 }
 
-nav,
-.navbar,
-.nav-toggle {
-    z-index: 2;
+.topnav a {
+    float: left;
+    display: block;
+    color: #ffff99;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.3em;
 }
 
-
-/* 
-4) Style nav items -- inline, no bullet points, space between
-*/
-
-.nav-item {
-    display: inline;
-    list-style-type: none;
-    width: 100%;
+.topnav a:hover {
+    background-color: #cc99ff;
+    color: #ffff99;
 }
 
+.active {
+    background-color: #cc99ff;
+    color: white;
+}
 
-/* 
-5) Hide the button for desktop
-*/
-
-.nav-toggle {
+.topnav .icon {
     display: none;
 }
 
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
 
-/* 
-6) Add media query for mobile styles
-*/
-
-@media (max-width:490px) {
-    /* 
-7) Add mobile style for nav list -- items in a column
-*/
-    .nav-item {
-        display: block;
-    }
-    /* 
-8) Display the button on mobile
-*/
-    .nav-toggle {
-        display: block;
-        position: absolute;
-        color: #ffff99;
-        background-color: #2C363F;
-        width: 100%;
-        height: 5em;
-        border: none;
-    }
-    /* 
-9) Add a class that hides the nav items on mobile. This is an additional class because we are going to use it to sometimes show the nav and sometimes hide it
-*/
-    .mobile-nav-hidden {
-        display: none;
-    }
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
