@@ -1,14 +1,9 @@
-//Identify the button
-var navToggle = document.getElementById('nav-toggle');
-//Identify the nav items
-var navItems = document.getElementById('nav-items')
-//Button is waiting to be clicked
-navToggle.addEventListener('click', function(){
-  
-  //Button gets clicked
-  //Nav items disappear
-  
-  //Button gets clicked again
-  //Nav items disappear
-  navItems.classList.toggle('mobile-nav-hidden');
-});
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
