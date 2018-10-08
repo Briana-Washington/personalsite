@@ -1,5 +1,7 @@
 nav {
     z-index:2;
+    position: fixed;
+    width: 100%;
 }
 
 .topnav {

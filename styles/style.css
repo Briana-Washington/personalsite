@@ -15,7 +15,7 @@ body {
 
 .overlay {
  background-color:rgba(0, 0, 0, 0.29); 
- height: inherit;
+ height: 8em;
  padding: 2em;
 }
 
@@ -144,7 +144,7 @@ p {
 }
 
 a:link {
-  color: #ffff80;
+  color: #cc99ff;
   text-decoration: none;
 }
 
@@ -228,4 +228,13 @@ footer h2 {
 #overlaybottom p {
   font-size:1em;
 }
+}
+
+[aos="fade"] {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+[aos="fade"].aos-animate {
+  opacity: 1;
 }
