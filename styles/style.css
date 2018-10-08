@@ -230,11 +230,5 @@ footer h2 {
 }
 }
 
-[aos="fade"] {
-  opacity: 0;
-  transition-property: opacity;
-}
-
-[aos="fade"].aos-animate {
-  opacity: 1;
+  margin:5% 0%;
 }
